@@ -26,7 +26,7 @@ namespace AudioPlayer
             leallitbtn.IsEnabled = true;
         }
 
-        private void playButton_Click(object sender, RoutedEventArgs e)
+        private void lejatszasbtn_Click(object sender, RoutedEventArgs e)
         {
             waveout.Play();
             kivalasztott.Play();
@@ -35,7 +35,7 @@ namespace AudioPlayer
             leallitbtn.IsEnabled = true;
         }
 
-        private void pauseButton_Click(object sender, RoutedEventArgs e)
+        private void megallitbtn_Click(object sender, RoutedEventArgs e)
         {
             waveout.Pause();
             kivalasztott.Pause();
@@ -44,7 +44,7 @@ namespace AudioPlayer
             leallitbtn.IsEnabled = true;
         }
 
-        private void stopButton_Click(object sender, RoutedEventArgs e)
+        private void leallitbtn_Click(object sender, RoutedEventArgs e)
         {
             waveout.Stop();
             kivalasztott.Stop();
