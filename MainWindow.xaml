@@ -1,0 +1,13 @@
+﻿<Window x:Class="AudioPlayer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Audio Player" Height="350" Width="525">
+    <Grid>
+        <MediaElement x:Name="kivalasztott" LoadedBehavior="Manual" Loaded="mediaElement_Loaded" UnloadedBehavior="Stop" MediaEnded="mediaElement_MediaEnded" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5">
+            <Button x:Name="lejatszasbtn" Content="Lejátszás" Click="playButton_Click" Margin="5" Width="75" Height="25" />
+            <Button x:Name="megallitbtn" Content="Megállít" Click="pauseButton_Click" Margin="5" Width="75" Height="25" IsEnabled="False" />
+            <Button x:Name="leallitbtn" Content="Leállít" Click="stopButton_Click" Margin="5" Width="75" Height="25" IsEnabled="False" />
+        </StackPanel>
+    </Grid>
+</Window>
