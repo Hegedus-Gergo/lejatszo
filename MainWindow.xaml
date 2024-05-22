@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Audio Player" Height="350" Width="525">
     <Grid>
-        <MediaElement x:Name="kivalasztott" LoadedBehavior="Manual" Loaded="mediaElement_Loaded" UnloadedBehavior="Stop" MediaEnded="mediaElement_MediaEnded" />
+        <MediaElement x:Name="kivalasztott" LoadedBehavior="Manual" Loaded="mediaElement_Betolt" UnloadedBehavior="Stop" MediaEnded="mediaElement_Vege" />
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,5">
             <Button x:Name="lejatszasbtn" Content="Lejátszás" Click="lejatszasbtn_Click" Margin="5" Width="75" Height="25" />
             <Button x:Name="megallitbtn" Content="Megállít" Click="megallitbtn_Click" Margin="5" Width="75" Height="25" IsEnabled="False" />

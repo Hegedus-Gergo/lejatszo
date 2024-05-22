@@ -14,9 +14,9 @@ namespace AudioPlayer
             InitializeComponent();
         }
 
-        private void mediaElement_Loaded(object sender, RoutedEventArgs e)
+        private void mediaElement_Betolt(object sender, RoutedEventArgs e)
         {
-            hang = new AudioFileReader("file.mp3");
+            hang = new AudioFileReader("Katy Perry - Dark Horse ft. Juicy J.mp3");
             waveout = new WaveOutEvent();
             waveout.Init(hang);
             waveout.Play();
@@ -53,7 +53,7 @@ namespace AudioPlayer
             leallitbtn.IsEnabled = false;
         }
 
-        private void mediaElement_Vegetert(object sender, RoutedEventArgs e)
+        private void mediaElement_Vege(object sender, RoutedEventArgs e)
         {
             lejatszasbtn.IsEnabled = true;
             megallitbtn.IsEnabled = false;
