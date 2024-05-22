@@ -16,7 +16,7 @@ namespace AudioPlayer
 
         private void mediaElement_Betolt(object sender, RoutedEventArgs e)
         {
-            hang = new AudioFileReader("Katy Perry - Dark Horse ft. Juicy J.mp3");
+            hang = new AudioFileReader("file.mp3");
             waveout = new WaveOutEvent();
             waveout.Init(hang);
             waveout.Play();
